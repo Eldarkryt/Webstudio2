@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: $text-color;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+a {
+  color: $primary-color;
+}
+
+a:hover {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $accent-color;
+}
+.servise {
+  margin-bottom: 94px;
+}

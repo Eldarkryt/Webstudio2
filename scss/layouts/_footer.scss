@@ -1,0 +1,55 @@
+.footer {
+  background-color: #2f303a;
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-icone-div{
+  padding-top: 12px;
+    padding-right: 900px;
+}
+.footer-icone-title{
+  font-family: "Roboto",sans-serif;
+font-weight: 700;
+font-size: 14px;
+text-transform: uppercase;
+}
+.footer-icone {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: background-color 0.3s, border 0.3s, fill 0.3s;
+}
+
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: rgba(33, 150, 243, 1);
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+
+.footer-link:hover .footer-svg,
+.footer-link:focus .footer-svg {
+  fill: #fff;
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill:#fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,37 @@
+.customers {
+  display: flex;
+}
+.customers-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700px;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 97px;
+}
+.customers-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 97px;
+}
+.customers-link {
+  display: inline-block;
+  padding: 24px 46px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  transition: fill 0.3s;
+}
+.customers-link:hover .customers-svg,
+.customers-link:focus .customers-svg {
+  fill: rgba(33, 150, 243, 1);
+  transition: fill 0.3s;
+}
+.customers-svg {
+  width: 84px;
+  height: 40px;
+  fill: rgba(175, 177, 184, 1);
+}

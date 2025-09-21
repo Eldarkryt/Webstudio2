@@ -1,0 +1,34 @@
+.features {
+  display: flex;
+  margin-bottom: 94px;
+}
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 60px 0;
+  list-style: none;
+}
+.feature-item::before {
+  content: "";
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  background-color: $background-color;
+  margin-bottom: 30px;
+}
+.feature-item:nth-child(1)::before {
+  background-image: url(../../images/antenna.png);
+}
+.feature-item:nth-child(2)::before {
+  background-image: url(../../images/cock.png);
+}
+.feature-item:nth-child(3)::before {
+  background-image: url(../../images/diagram.png);
+}
+.feature-item:nth-child(4)::before {
+  background-image: url(../../images/astronaut.png);
+}
