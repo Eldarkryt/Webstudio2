@@ -12,20 +12,20 @@
     padding-right: 900px;
 }
 .footer-icone-title{
-  font-family: "Roboto",sans-serif;
-font-weight: 700;
-font-size: 14px;
+    @include text("Roboto", 700, 14px);
+//   font-family: "Roboto",sans-serif;
+// font-weight: 700;
+// font-size: 14px;
 text-transform: uppercase;
 }
 .footer-icone {
-  display: flex;
+   @extend %flex;
   gap: 10px;
   padding-top: 20px;
 }
 .footer-link {
-  display: flex;
+  @extend %flex;
   align-items: center;
-  justify-content: center;
   width: 36px;
   height: 36px;
   border-radius: 50%;

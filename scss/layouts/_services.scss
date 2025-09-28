@@ -1,13 +1,13 @@
 .services{
 &__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
+    @include text("Roboto", 700, 36px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 700;
+  // font-size: 36px;
   text-align: center;
 }
 &__list {
-  display: flex;
-  justify-content: space-between;
+   @extend %flex;
   gap: 30px;
   list-style: none;
   margin-top: 50px;
@@ -19,9 +19,10 @@
   position: relative;
 }
 &__text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
+    @include text("Roboto", 700, 17px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 700;
+  // font-size: 17px;
   text-align: center;
   padding: 27px;
   color: rgba(255, 255, 255, 1);

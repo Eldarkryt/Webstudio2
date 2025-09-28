@@ -36,9 +36,10 @@
   top: -50px;
 }
 .modal-ladel {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
+    @include text("Roboto", 400, 12px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 400;
+  // font-size: 12px;
   color: rgba(117, 117, 117, 1);
 }
 .modal-label-text {
@@ -56,16 +57,18 @@
   height: 120px;
 }
 .modal-input::placeholder {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
+    @include text("Roboto", 400, 12px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 400;
+  // font-size: 12px;
   padding-top: 13px;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-label-checkbox {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+    @include text("Roboto", 400, 14px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 400;
+  // font-size: 14px;
   color: rgba(117, 117, 117, 1);
   margin-top: 20px;
   margin-bottom: 30px;
@@ -81,9 +84,10 @@
   top: 2px;
 }
 .modal-label-checkbox span {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+    @include text("Roboto", 400, 14px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 400;
+  // font-size: 14px;
   text-decoration: underline;
   color: rgba(33, 150, 243, 1);
 }
@@ -91,9 +95,10 @@
   color: rgba(33, 150, 243, 1);
 }
 .btn-modal {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+    @include text("Roboto", 700, 16px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 700;
+  // font-size: 16px;
   text-align: center;
   width: 200px;
   height: 50px;

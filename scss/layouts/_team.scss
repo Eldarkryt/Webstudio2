@@ -4,13 +4,12 @@
   padding-bottom: 654;
 }
 .team-list {
-  display: flex;
-  justify-content: space-between;
+   @extend %flex;
   gap: 30px;
 }
 .team-icone {
   display: flex;
-  gap: 24px;
+  gap: 10px;
 }
 .team-item {
   background-color: #fff;
@@ -51,14 +50,9 @@
 .member-role {
   color: #757575;
 }
-.team-icone {
-  display: flex;
-  gap: 10px;
-}
 .team-link {
-  display: flex;
+   @extend %flex;
   align-items: center;
-  justify-content: center;
   width: 36px;
   height: 36px;
   border-radius: 50%;

@@ -1,19 +1,19 @@
 .header {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex;
   align-items: center;
   padding: 20px 0;
   flex-wrap: wrap;
   gap: 15px;
 }
 .nav-list {
-  display: flex;
+   @extend %flex;
   gap: 55px;
 }
 .nav-link {
-font-family:"Roboto",sans-serif;
-font-weight: 500;
-font-size: 14px;
+    @include text("Roboto", 500, 14px);
+//  font-family:"Roboto",sans-serif;
+// font-weight: 500;
+// font-size: 14px;
   position: relative;
 }
 .nav-link:hover {

@@ -1,15 +1,16 @@
 .customers {
-  display: flex;
+  @extend %flex;
 }
 .customers-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700px;
-  font-size: 36px;
+    @include text("Roboto", 700px, 36px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 700px;
+  // font-size: 36px;
   text-align: center;
   margin-top: 97px;
 }
 .customers-list {
-  display: flex;
+   @extend %flex;
   gap: 30px;
   margin-top: 50px;
   margin-bottom: 97px;

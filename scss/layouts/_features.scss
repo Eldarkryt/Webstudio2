@@ -1,10 +1,9 @@
 .features {
-  display: flex;
+  @extend %flex;
   margin-bottom: 94px;
 }
 .features-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex;
   gap: 30px;
   padding: 60px 0;
   list-style: none;
@@ -24,7 +23,7 @@
   background-image: url(../../images/antenna.png);
 }
 .feature-item:nth-child(2)::before {
-  background-image: url(../../images/cock.png);
+  background-image: url(../../images/clock.png);
 }
 .feature-item:nth-child(3)::before {
   background-image: url(../../images/diagram.png);

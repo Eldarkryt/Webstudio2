@@ -1,0 +1,11 @@
+%flex {
+  //placeholder
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin text($family, $weight, $size) {
+  font-family: $family, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}

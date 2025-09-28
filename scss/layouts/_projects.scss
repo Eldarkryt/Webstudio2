@@ -1,10 +1,9 @@
 .projects-list {
-  display: flex;
+   @extend %flex;
   flex-wrap: wrap;
   gap: 30px;
   list-style: none;
   padding-bottom: 60px;
-  justify-content: center;
 }
 
 .project-item {
@@ -21,8 +20,9 @@
 }
 
 .project-title {
-  font-size: 18px;
-  font-weight: bold;
+    @include text("Roboto", bold, 18px);
+  // font-size: 18px;
+  // font-weight: bold;
   margin: 15px;
 }
 
@@ -32,9 +32,10 @@
   margin: 0 15px 15px 15px;
 }
 .portfolio-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+    @include text("Roboto", 400, 18px);
+  // font-family: "Roboto", sans-serif;
+  // font-weight: 400;
+  // font-size: 18px;
   color: #fff;
   padding-top: 64px;
   padding-left: 24px;
