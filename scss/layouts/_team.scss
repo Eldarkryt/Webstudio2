@@ -9,6 +9,7 @@
 }
 .team-icone {
   display: flex;
+  align-content: center;
   gap: 10px;
 }
 .team-item {
@@ -51,10 +52,9 @@
   color: #757575;
 }
 .team-link {
-   @extend %flex;
+  display: inline-block;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  padding: 12px;
   border-radius: 50%;
   color: rgba(175, 177, 184, 1);
   transition: background-color 0.3s, border 0.3s, fill 0.3s;

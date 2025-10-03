@@ -1,4 +1,4 @@
-.projects-list, .footer-link, .footer-icone, .customers-list, .customers, .team-link, .team-list, .services__list, .features-list, .features, .nav-list, .header {
+.projects-list, .footer-icone, .customers-list, .customers, .team-list, .services__list, .features-list, .features, .nav-list, .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,6 +172,7 @@ a:hover {
   margin-bottom: 94px;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
 }
 .hero__title {
   color: #fff;
@@ -276,6 +277,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   gap: 10px;
 }
 
@@ -327,11 +330,11 @@ a:hover {
 }
 
 .team-link {
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 36px;
-  height: 36px;
+  padding: 12px;
   border-radius: 50%;
   color: rgb(175, 177, 184);
   -webkit-transition: background-color 0.3s, border 0.3s, fill 0.3s;
@@ -427,14 +430,14 @@ a:hover {
 .footer-icone {
   gap: 10px;
   padding-top: 20px;
-}
-
-.footer-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 36px;
-  height: 36px;
+}
+
+.footer-link {
+  display: inline-block;
+  padding: 10px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
