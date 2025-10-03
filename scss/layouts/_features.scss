@@ -4,9 +4,25 @@
 }
 .features-list {
   @extend %flex;
-  gap: 30px;
-  padding: 60px 0;
-  list-style: none;
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: stretch;
+  }
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+
+  }
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
+
+  }
 }
 .feature-item::before {
   content: "";
@@ -18,6 +34,12 @@
   border-radius: 4px;
   background-color: $background-color;
   margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 .feature-item:nth-child(1)::before {
   background-image: url(../../images/antenna.png);
