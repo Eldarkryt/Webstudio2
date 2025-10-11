@@ -184,8 +184,8 @@ a:hover {
 .hero {
   text-align: center;
   padding: 200px 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/sima.png);
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/sima.png);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/sima.png);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/sima.png);
   /* background-color: rgba(47, 48, 58, 1); */
   margin-bottom: 94px;
   background-repeat: no-repeat;
@@ -331,13 +331,11 @@ a:hover {
 .team {
   background-color: #f5f4fa;
   padding-top: 94px;
-  padding-bottom: 654;
+  padding-bottom: 654px;
 }
-
 .team-list {
   gap: 30px;
 }
-
 .team-icone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +351,6 @@ a:hover {
   padding-bottom: 30px;
   margin-bottom: 94px;
 }
-
 .team-item:hover {
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
@@ -365,13 +362,18 @@ a:hover {
   font-size: 36px;
   font-weight: 700px;
 }
+@media screen and (min-width: 480px) {
+  .team-title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
 
 .team-member {
   text-align: center;
   background-color: #ffffff;
   padding: 20px;
 }
-
 .team-photo {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -383,15 +385,24 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .member-name {
   margin-top: 15px;
   font-size: 18px;
   font-weight: bold;
 }
+@media screen and (min-width: 480px) {
+  .member-name {
+    margin-bottom: 10px;
+  }
+}
 
 .member-role {
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .member-role {
+    margin-bottom: 16px;
+  }
 }
 
 .team-link {
@@ -487,6 +498,7 @@ a:hover {
 @media screen and (min-width: 480px) {
   .customers-link {
     padding: 16px 52px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -590,14 +602,21 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 15px;
   list-style: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 40px 0;
+}
+@media screen and (min-width: 480px) {
+  .filter-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .filter-link {
@@ -632,6 +651,21 @@ a:hover {
   border-radius: 4px;
   background-color: #fff;
   overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .project-item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-item {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-item {
+    width: 31%;
+  }
 }
 
 .project-image {
@@ -671,6 +705,21 @@ a:hover {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .portfolio-text {
+    height: 355px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-text {
+    height: 270px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-text {
+    height: 294px;
+  }
 }
 
 .project-item:hover .portfolio-text,

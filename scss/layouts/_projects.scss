@@ -1,5 +1,5 @@
 .projects-list {
-   @extend %flex;
+  @extend %flex;
   flex-wrap: wrap;
   gap: 30px;
   list-style: none;
@@ -13,6 +13,16 @@
   border-radius: 4px;
   background-color: #fff;
   overflow: hidden;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 45%;
+  }
+   @media screen and (min-width: 1200px){
+        width: 31%;
+    }
+
 }
 
 .project-image {
@@ -20,7 +30,7 @@
 }
 
 .project-title {
-    @include text("Roboto", bold, 18px);
+  @include text("Roboto", bold, 18px);
   // font-size: 18px;
   // font-weight: bold;
   margin: 15px;
@@ -32,7 +42,7 @@
   margin: 0 15px 15px 15px;
 }
 .portfolio-text {
-    @include text("Roboto", 400, 18px);
+  @include text("Roboto", 400, 18px);
   // font-family: "Roboto", sans-serif;
   // font-weight: 400;
   // font-size: 18px;
@@ -50,6 +60,15 @@
   height: 294px;
   transform: translateY(150%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    height: 355px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 270px;
+  }
+   @media screen and (min-width: 1200px){
+        height: 294px;
+    }
 }
 .project-item:hover .portfolio-text,
 .project-item:focus .portfolio-text {
