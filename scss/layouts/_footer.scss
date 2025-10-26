@@ -2,14 +2,21 @@
   background-color: #2f303a;
   color: #fff;
   padding: 40px 0;
-  display: flex;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    
+  }
 }
+.footer-address{
+  padding-top: 20px;
+}
+
 .address-link {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-icone-div{
-  padding-top: 12px;
-    padding-right: 900px;
+padding-left: 137px;
+padding-right: 137px;
 }
 .footer-icone-title{
     @include text("Roboto", 700, 14px);
@@ -17,12 +24,12 @@
 // font-weight: 700;
 // font-size: 14px;
 text-transform: uppercase;
+margin-top: 60px;
 }
 .footer-icone {
    @extend %flex;
   gap: 10px;
   padding-top: 20px;
-   align-items: center;
 }
 .footer-link {
   display: inline-block;
@@ -51,4 +58,50 @@ text-transform: uppercase;
   fill:#fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mailing{
+  margin-top: 60px;
+}
+.mailing-title {
+  font-family: "Roboto",sans-serif;
+font-weight: 700;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 3%;
+text-transform: uppercase;
+}
+.mailing-input {
+   width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2f303a;
+    color: #fff;
+    margin-top: 20px;
+}
+.mailing-input::placeholder{
+font-family: "Roboto",sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 3%;
+}
+.mailing-btn {
+  font-family: "Roboto",sans-serif;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 6%;
+background-color: rgba(33, 150, 243, 1);
+color: #fff;
+border: none;
+border-radius: 4px;
+padding-left: 31px;
+padding-right: 64px;
+padding-top:10px; 
+padding-bottom:10px;
+margin-top: 10px;
+margin-right:140px;
+margin-left:140px;
 }
