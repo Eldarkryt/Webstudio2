@@ -7,10 +7,10 @@
   list-style: none;
   justify-content: center;
   margin: 40px 0;
-  @media screen and (min-width: 480px){
+  @media screen and (min-width: 480px) {
     justify-content: space-between;
-     flex-wrap: wrap;
-   }
+    flex-wrap: wrap;
+  }
 }
 .filter-link {
   padding: 10px 20px;

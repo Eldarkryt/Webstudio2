@@ -62,19 +62,16 @@ a:hover {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    border: 1px solid blue;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    border: 1px solid red;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    border: 1px solid green;
   }
 }
 
@@ -514,11 +511,7 @@ a:hover {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .services__title {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .services__title {
@@ -534,11 +527,7 @@ a:hover {
   gap: 30px;
   list-style: none;
   margin-top: 50px;
-}
-@media screen and (min-width: 480px) {
-  .services__list {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .services__list {
@@ -554,11 +543,7 @@ a:hover {
 }
 .services__image {
   width: 100%;
-}
-@media screen and (min-width: 480px) {
-  .services__image {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .services__image {
@@ -574,11 +559,7 @@ a:hover {
 }
 .services__item {
   position: relative;
-}
-@media screen and (min-width: 480px) {
-  .services__item {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .services__item {
@@ -603,11 +584,7 @@ a:hover {
   width: 100%;
   bottom: 3px;
   background-color: rgba(47, 48, 58, 0.8);
-}
-@media screen and (min-width: 480px) {
-  .services__text {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .services__text {
@@ -649,6 +626,13 @@ a:hover {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .team-icone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,6 +644,11 @@ a:hover {
 @media screen and (min-width: 768px) {
   .team-icone {
     padding-left: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-icone {
+    padding-left: 50px;
   }
 }
 
@@ -703,6 +692,13 @@ a:hover {
     height: 344px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-photo {
+    width: 100%;
+    height: 260px;
+  }
+}
+
 .member-name {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -845,13 +841,55 @@ a:hover {
   background-color: #2f303a;
   color: #fff;
   padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
   text-align: center;
 }
+
+.footer-logo span {
+  color: #2196f3;
+}
+
 .footer-address {
+  padding-left: 137px;
+  padding-right: 137px;
+}
+@media screen and (min-width: 768px) {
+  .footer-address {
+    padding-left: 10px;
+  }
+}
+.footer-info {
   padding-top: 20px;
 }
 
 .address-link {
+  gap: 8px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -859,13 +897,29 @@ a:hover {
   padding-left: 137px;
   padding-right: 137px;
 }
+@media screen and (min-width: 768px) {
+  .footer-icone-div {
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-icone-div {
+    padding-left: 30px;
+  }
+}
 
 .footer-icone-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  margin-top: 60px;
+  margin-top: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-icone-title {
+    text-align: center;
+  }
 }
 
 .footer-icone {
@@ -905,6 +959,11 @@ a:hover {
 .mailing {
   margin-top: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .mailing {
+    margin-top: 15px;
+  }
+}
 
 .mailing-title {
   font-family: "Roboto", sans-serif;
@@ -913,6 +972,7 @@ a:hover {
   line-height: 100%;
   letter-spacing: 3%;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .mailing-input {
@@ -924,6 +984,16 @@ a:hover {
   background-color: #2f303a;
   color: #fff;
   margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .mailing-input {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-input {
+    width: 358px;
+  }
 }
 
 .mailing-input::-webkit-input-placeholder {
@@ -983,6 +1053,19 @@ a:hover {
   margin-top: 10px;
   margin-right: 140px;
   margin-left: 140px;
+}
+@media screen and (min-width: 768px) {
+  .mailing-btn {
+    margin-right: 160px;
+    margin-left: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-btn {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .portfolio {
@@ -1155,12 +1238,7 @@ a:hover {
   font-size: 20px;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 12px;
-}
-
-.modal-list {
-  position: relative;
-  top: -50px;
+  margin-bottom: 0px;
 }
 
 .modal-ladel {
@@ -1233,18 +1311,12 @@ a:hover {
   font-size: 14px;
   color: rgb(117, 117, 117);
   margin-top: 20px;
-  margin-bottom: 30px;
-  position: relative;
-  top: -35px;
 }
 
 .input-checkbox {
   width: 16px;
   height: 15px;
   border: rgb(33, 33, 33);
-  position: relative;
-  right: 390px;
-  top: 2px;
 }
 
 .modal-label-checkbox span {
@@ -1274,16 +1346,30 @@ a:hover {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
   margin-bottom: 40px;
-  position: relative;
-  top: -50px;
 }
 
-.modal-svg {
+.modal-svg-people {
+  width: 12px;
+  height: 12px;
   position: relative;
-  width: 13px;
-  height: 13px;
-  top: -41px;
-  left: -200px;
+  bottom: 40px;
+  right: 180px;
+}
+
+.modal-svg-phone {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  bottom: 40px;
+  right: 185px;
+}
+
+.modal-svg-email {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  bottom: 90px;
+  left: 22px;
 }
 
 .close-button {

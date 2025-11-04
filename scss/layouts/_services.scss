@@ -1,84 +1,69 @@
-.services{
-&__title {
+.services {
+  &__title {
     @include text("Roboto", 700, 36px);
-  // font-family: "Roboto", sans-serif;
-  // font-weight: 700;
-  // font-size: 36px;
-  text-align: center;
-  @media screen and (min-width: 480px) {
+    // font-family: "Roboto", sans-serif;
+    // font-weight: 700;
+    // font-size: 36px;
+    text-align: center;
+      display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+  &__list {
+    @extend %flex;
+    gap: 30px;
+    list-style: none;
+    margin-top: 50px;
     display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
-  @media screen and (min-width: 768px) {
+  &__image {
+    width: 100%;
     display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
-  @media screen and (min-width: 1200px) {
-    display: block;
+  &__item {
+    position: relative;
+   display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
-}
-&__list {
-   @extend %flex;
-  gap: 30px;
-  list-style: none;
-  margin-top: 50px;
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-   display: flex;
-  }
-}
-&__image {
-  width: 100%;
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-   display: flex;
-  }
-}
-&__item {
-  position: relative;
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-   display: flex;
-  }
-}
-&__text {
+  &__text {
     @include text("Roboto", 700, 17px);
-  // font-family: "Roboto", sans-serif;
-  // font-weight: 700;
-  // font-size: 17px;
-  text-align: center;
-  padding: 27px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  width: 100%;
-  bottom: 3px;
-  background-color: rgba(47, 48, 58, 0.8);
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-   display: block;
+    // font-family: "Roboto", sans-serif;
+    // font-weight: 700;
+    // font-size: 17px;
+    text-align: center;
+    padding: 27px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    width: 100%;
+    bottom: 3px;
+    background-color: rgba(47, 48, 58, 0.8);
+   display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
 }
-}
-
-
-
-
-

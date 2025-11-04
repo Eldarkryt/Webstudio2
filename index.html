@@ -68,7 +68,7 @@
             </ul>
           </nav>
           <ul class="menu-contact">
-              <li class="menu-item">
+            <li class="menu-item">
               <a class="menu-contact-phone" href=""> +38 096 111 11 11</a>
             </li>
             <li class="menu-item">
@@ -78,10 +78,18 @@
             </li>
           </ul>
           <ul class="menu-program">
-            <li class="program-item"><a href="" class="program-link">Instagram</a></li>
-            <li class="program-item"><a href="" class="program-link">Twitter</a></li>
-            <li class="program-item"><a href="" class="program-link">Facebook</a></li>
-            <li class="program-item"><a href="" class="program-link">LinkedIn</a></li>
+            <li class="program-item">
+              <a href="" class="program-link">Instagram</a>
+            </li>
+            <li class="program-item">
+              <a href="" class="program-link">Twitter</a>
+            </li>
+            <li class="program-item">
+              <a href="" class="program-link">Facebook</a>
+            </li>
+            <li class="program-item">
+              <a href="" class="program-link">LinkedIn</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -104,7 +112,7 @@
                 </svg>
               </button>
               <h2 class="modal-title">
-                Залиште свої дані, ми вам передзвонимо
+                Залиште свої дані, ми вам<br> передзвонимо
               </h2>
 
               <form action="">
@@ -112,7 +120,7 @@
                   >ім'я
                   <input type="text" class="modal-input" />
                 </label>
-                <svg class="modal-svg">
+                <svg class="modal-svg-people">
                   <use href="./images/symbol-defs.svg#icon-people"></use>
                 </svg>
 
@@ -120,7 +128,7 @@
                   >телефон
                   <input type="number" class="modal-input" />
                 </label>
-                <svg class="modal-svg">
+                <svg class="modal-svg-phone">
                   <use href="./images/symbol-defs.svg#icon-telephone"></use>
                 </svg>
 
@@ -128,7 +136,7 @@
                   >пошта
                   <input type="email" class="modal-input" />
                 </label>
-                <svg class="modal-svg">
+                <svg class="modal-svg-email">
                   <use href="./images/symbol-defs.svg#icon-poshta"></use>
                 </svg>
 
@@ -417,64 +425,64 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo" href=""><span>Web</span>studio</a>
-        <address class="footer-address">
-          <ul class="address-list">
-            <li class="address-item">
-              <a class="address-link" href="">київ, пр-т Лесі Українки, 26</a>
+        <div class="footer-list">
+        <div class="footer-address">
+          <a class="footer-logo" href=""><span>Web</span>studio</a>
+          <address class="footer-info">
+            <ul class="address-list">
+              <li class="address-item">
+                <a class="address-link" href="">київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="">info@devstudio.com</a>
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-icone-div">
+          <h2 class="footer-icone-title">приєднуйтесь</h2>
+          <ul class="footer-icone">
+            <li class="icone-item">
+              <a href="" class="footer-link">
+                <svg class="footer-svg">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="address-link" href="">info@devstudio.com</a>
+            <li class="icone-item">
+              <a href="" class="footer-link">
+                <svg class="footer-svg">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="address-link" href="">+38 096 111 11 11</a>
+            <li class="icone-item">
+              <a href="" class="footer-link">
+                <svg class="footer-svg">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icone-item">
+              <a href="" class="footer-link">
+                <svg class="footer-svg">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      <div class="footer-icone-div">
-        <h2 class="footer-icone-title">приєднуйтесь</h2>
-        <ul class="footer-icone">
-          <li class="icone-item">
-            <a href="" class="footer-link">
-              <svg class="footer-svg">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icone-item">
-            <a href="" class="footer-link">
-              <svg class="footer-svg">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icone-item">
-            <a href="" class="footer-link">
-              <svg class="footer-svg">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="icone-item">
-            <a href="" class="footer-link">
-              <svg class="footer-svg">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
+        <div class="mailing">
+          <h2 class="mailing-title">Підпишіться на розсилку</h2>
+          <input type="email" placeholder="E-mail" class="mailing-input" />
+          <button type="submit" class="mailing-btn">Підписатися</button>
+        </div>
+         </div>
       </div>
-      <div class="mailing">
-      <h2 class="mailing-title">
-        Підпишіться на розсилку
-      </h2>
-      <input type="email" placeholder="E-mail" class="mailing-input">
-      <button type="submit" class="mailing-btn">
-        Підписатися
-      </button>
-      </div>
-      </div>
-    </footer> 
+    </footer>
     <script src="./modal.js"></script>
   </body>
 </html>
