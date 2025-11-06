@@ -10,7 +10,7 @@
 }
 .modal {
   width: 528px;
-  height: 581px;
+  height: 635px;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -22,26 +22,21 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in-out;
 }
 .modal-title {
-  position: relative;
-  top: -50px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 0px;
 }
 .modal-list {
-  
 }
 .modal-ladel {
   @include text("Roboto", 400, 12px);
   color: rgba(117, 117, 117, 1);
 }
 .modal-label-text {
-  position: absolute;
-  right: 433px;
-  bottom: 125px;
+  margin-bottom: 10px;
+  text-align: start;
+  margin-left: 40px;
 }
 .modal-input {
   width: 448px;
@@ -71,6 +66,7 @@
 .input-checkbox {
   width: 16px;
   height: 15px;
+  margin-top: 10px;
   border: rgba(33, 33, 33, 1);
 }
 .modal-label-checkbox span {
@@ -97,29 +93,28 @@
   color: #fff;
   background-color: rgba(33, 150, 243, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .modal-svg-people {
   width: 12px;
   height: 12px;
   position: relative;
   bottom: 40px;
-  right: 180px;
+  right: 200px;
 }
 .modal-svg-phone {
   width: 12px;
   height: 12px;
   position: relative;
   bottom: 40px;
-  right: 185px;
+  right: 200px;
 }
 .modal-svg-email {
   width: 12px;
   height: 12px;
   position: relative;
-  bottom: 90px;
-  left: 22px;
+  bottom: 40px;
+  right: 200px;
 }
 .close-button {
   width: 30px;
@@ -128,8 +123,8 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   position: relative;
-  top: 3px;
-  left: 245px;
+  top: 10px;
+  left: 240px;
 }
 .backdrop.is-hidden {
   opacity: 0;
