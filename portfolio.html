@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <header class="container header">
+   <header class="container header">
       <a class="logo" href="./index.html"><span>Web</span>studio</a>
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Cтудія</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="">Cтудія</a></li>
           <li class="nav-item">
             <a class="nav-link" href="./portfolio.html">Портфоліо</a>
           </li>
@@ -21,10 +19,75 @@
         </ul>
       </nav>
       <ul class="header-contact">
-        <li><a class="contact-email" href="">info@devstudio.com</a></li>
-        <li><a class="contact-phone" href="">+38 096 111 11 11</a></li>
+        <li class="header-item">
+          <a class="contact-email" href="" class="">
+            <svg class="header-link">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="header-item">
+          <a class="contact-phone" href="">
+            <svg class="header-link">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
       </ul>
-    </header> 
+      <button type="button" data-menu-open class="btn-menu-open">
+        <svg class="menu-open-svg">
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu is-hidden" data-menu>
+        <div class="container">
+          <button type="button" data-menu-close class="btn-menu-close">
+            <svg class="menu-close-svg">
+              <use href="./images/symbol-defs.svg#icon-krestic"></use>
+            </svg>
+          </button>
+          <nav class="nav-menu">
+            <ul class="nav-menu-list">
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="">Cтудія</a>
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-menu-item">
+                <a class="nav-menu-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="menu-contact">
+            <li class="menu-item">
+              <a class="menu-contact-phone" href=""> +38 096 111 11 11</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-contact-email" href="" class="">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-program">
+            <li class="program-item">
+              <a href="" class="program-link">Instagram</a>
+            </li>
+            <li class="program-item">
+              <a href="" class="program-link">Twitter</a>
+            </li>
+            <li class="program-item">
+              <a href="" class="program-link">Facebook</a>
+            </li>
+            <li class="program-item">
+              <a href="" class="program-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <section class="container portfolio">
       <ul class="filter-list">
@@ -39,7 +102,7 @@
 
       <ul class="projects-list">
         <li class="project-item">
-          <img class="project-image" src="./images/nout.jpg" alt="" />
+          <img srcset="./images/noutX1.jpg, ./images/noutX2.jpg" class="project-image" src="./images/noutX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -49,7 +112,7 @@
           <p class="project-category">Веб-сайт</p>
         </li>
         <li class="project-item">
-          <img class="project-image" src="./images/poster.jpg" alt="" />
+          <img srcset="./images/posterX1.jpg, ./images/posterX2.jpg" class="project-image" src="./images/posterX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -59,7 +122,7 @@
           <p class="project-category">Дизайн</p>
         </li>
         <li class="project-item">
-          <img class="project-image" src="./images/Seafood.jpg" alt="" />
+          <img srcset="./images/SeafoodX1.jpg, ./images/SeafoodX2.jpg" class="project-image" src="./images/SeafoodX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -69,7 +132,7 @@
           <p class="project-category">Додаток</p>
         </li>
         <li class="project-item">
-          <img class="project-image" src="./images/naushnik.jpg" alt="" />
+          <img srcset="./images/naushnikX1.jpg, ./images/naushnikX2.jpg" class="project-image" src="./images/naushnikX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -79,7 +142,7 @@
           <p class="project-category">Маркетинг</p>
         </li>
         <li class="project-item">
-          <img class="project-image" src="./images/korobka.jpg" alt="" />
+          <img srcset="./images/korobkaX1.jpg, ./images/korobkaX2.jpg" class="project-image" src="./images/korobkaX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -89,7 +152,7 @@
           <p class="project-category">Додаток</p>
         </li>
         <li class="project-item">
-          <img class="project-image" src="./images/ekran.jpg" alt="" />
+          <img srcset="./images/ekranX1.jpg, ./images/ekranX2.jpg" class="project-image" src="./images/ekranX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -99,7 +162,7 @@
           <p class="project-category">Веб-сайт</p>
         </li>
         <li class="project-item">
-          <img class="project-image" src="./images/knuga.jpg" alt="" />
+          <img srcset="./images/knugaX1.jpg, ./images/knugaX2.jpg" class="project-image" src="./images/knugaX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -109,7 +172,7 @@
           <p class="project-category">Дизайн</p>
         </li>
         <li class="project-item">
-          <img class="project-image" src="./images/lab.jpg" alt="" />
+          <img srcset="./images/labX1.jpg, ./images/labX2.jpg" class="project-image" src="./images/labX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -119,7 +182,7 @@
           <p class="project-category">Маркетинг</p>
         </li>
         <li class="project-item">
-          <img class="project-image" src="./images/nout&ruki.jpg" alt="" />
+          <img srcset="./images/nout&rukiX1.jpg, ./images/nout&rukiX2.jpg" class="project-image" src="./images/nout&rukiX1.jpg" alt="" />
           <p class="portfolio-text">
             Ресурс пропонує комплексні<br> пропозиції з різним рівнем<br> функціоналу та
             сервісів. Все це<br> дозволить відвідувачу отримати<br> вичерпні відомості
@@ -130,23 +193,67 @@
         </li>
       </ul>
     </section>
-    <footer class="footer">
+  <footer class="footer">
       <div class="container">
-        <a class="logo" href=""><span>Web</span>studio</a>
-        <address class="footer-address">
-          <ul class="address-list">
-            <li class="address-item">
-              <a class="address-link" href="">київ, пр-т Лесі Українки, 26</a>
-            </li>
-            <li class="address-item">
-              <a class="address-link" href="">info@devstudio.com</a>
-            </li>
-            <li class="address-item">
-              <a class="address-link" href="">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <div class="footer-list">
+          <div class="footer-address">
+            <a class="footer-logo" href=""><span>Web</span>studio</a>
+            <address class="footer-info">
+              <ul class="address-list">
+                <li class="address-item">
+                  <a class="address-link" href=""
+                    >київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address-item">
+                  <a class="address-link" href="">info@devstudio.com</a>
+                </li>
+                <li class="address-item">
+                  <a class="address-link" href="">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-icone-div">
+            <h2 class="footer-icone-title">приєднуйтесь</h2>
+            <ul class="footer-icone">
+              <li class="icone-item">
+                <a href="" class="footer-link">
+                  <svg class="footer-svg">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icone-item">
+                <a href="" class="footer-link">
+                  <svg class="footer-svg">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icone-item">
+                <a href="" class="footer-link">
+                  <svg class="footer-svg">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icone-item">
+                <a href="" class="footer-link">
+                  <svg class="footer-svg">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mailing">
+            <h2 class="mailing-title">Підпишіться на розсилку</h2>
+            <input type="email" placeholder="E-mail" class="mailing-input" />
+            <button type="submit" class="mailing-btn">Підписатися</button>
+          </div>
+        </div>
       </div>
-    </footer> 
+    </footer>
   </body>
 </html>

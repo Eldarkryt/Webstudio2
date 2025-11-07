@@ -21,8 +21,7 @@
   }
 }
 .team-icone {
-  display: flex;
-  align-content: center;
+ display: flex;
   padding-left: 140px;
   @media screen and (min-width: 768px) {
    padding-left: 90px;
@@ -30,6 +29,10 @@
   @media screen and (min-width: 1200px) {
     padding-left: 50px;
   }
+}
+.item-icone{
+  display: flex;
+  justify-content: center;
 }
 .team-item {
   background-color: #fff;
