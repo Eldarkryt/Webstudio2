@@ -9,13 +9,14 @@
   transition: opacity 400ms ease-in-out, visibility 400ms ease-in-out;
 }
 .modal {
-  width: 528px;
-  height: 635px;
+  padding: 24px 40px 40px;
+  width: 488px;
+  height: auto;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -27,25 +28,39 @@
   font-size: 20px;
   text-align: center;
 }
-.modal-list {
-}
+
 .modal-ladel {
   @include text("Roboto", 400, 12px);
   color: rgba(117, 117, 117, 1);
+  display: block;
+  width: 100%;
+  position: relative;
 }
 .modal-label-text {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   text-align: start;
   margin-left: 40px;
 }
 .modal-input {
-  width: 448px;
   height: 40px;
-  margin: 10px 40px;
+
+  padding-left: 36px;
+  // margin: 10px 40px;
+}
+
+.modal-input,
+.modal-input-text {
+  width: 100%;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input-text {
-  width: 448px;
+  display: block;
   height: 120px;
+  padding: 12px 16px;
+  resize: none;
 }
 .modal-input::placeholder {
   @include text("Roboto", 400, 12px);
@@ -85,7 +100,6 @@
   // font-family: "Roboto", sans-serif;
   // font-weight: 700;
   // font-size: 16px;
-  text-align: center;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -95,26 +109,18 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-top: 20px;
 }
-.modal-svg-people {
+.modal-svg {
   width: 12px;
   height: 12px;
-  position: relative;
-  bottom: 40px;
-  right: 200px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
 }
-.modal-svg-phone {
-  width: 12px;
-  height: 12px;
-  position: relative;
-  bottom: 40px;
-  right: 200px;
-}
-.modal-svg-email {
-  width: 12px;
-  height: 12px;
-  position: relative;
-  bottom: 40px;
-  right: 200px;
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 .close-button {
   width: 30px;
@@ -122,9 +128,9 @@
   border-radius: 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  position: relative;
+  position: absolute;
   top: 10px;
-  left: 240px;
+  right: 12px;
 }
 .backdrop.is-hidden {
   opacity: 0;

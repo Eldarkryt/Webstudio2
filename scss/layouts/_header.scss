@@ -23,6 +23,7 @@
   //  font-family:"Roboto",sans-serif;
   // font-weight: 500;
   // font-size: 14px;
+  transition: color .5s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   display: none;
   @media screen and (min-width: 768px) {
@@ -46,11 +47,11 @@
   bottom: -20px;
   opacity: 0;
   transform: scale(0);
-  transition: opacity 0.5s linear, transform 0.5s linear;
+  transition: opacity .5s linear, transform .5s linear;
 }
 .nav-link:hover::after {
   opacity: 1;
-  transform: scalex(1);
+  transform: scaleX(1);
 }
 
 .header-contact {

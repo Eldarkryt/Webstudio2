@@ -4,22 +4,20 @@
 }
 .features-list {
   @extend %flex;
-  @media screen and (min-width: 480px) {
     flex-direction: column;
     margin-bottom: 30px;
     align-items: stretch;
-  }
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
+    gap: 30px;
   }
   @media screen and (min-width: 1200px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 8px;
+    gap: 30px;
   }
 }
 .feature-item::before {

@@ -39,12 +39,6 @@ a {
   color: #212121;
 }
 
-a:hover {
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #2196f3;
-}
-
 .servise {
   margin-bottom: 94px;
 }
@@ -127,6 +121,8 @@ a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
+  -webkit-transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   display: none;
 }
@@ -169,8 +165,8 @@ a:hover {
 
 .nav-link:hover::after {
   opacity: 1;
-  -webkit-transform: scalex(1);
-          transform: scalex(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .header-contact {
@@ -400,6 +396,7 @@ a:hover {
   /* background-color: rgba(47, 48, 58, 1); */
   margin-bottom: 94px;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   width: 100%;
 }
@@ -436,30 +433,29 @@ a:hover {
   padding: 10px 32px;
   border-color: transparent;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .features {
   margin-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
-  .features-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 30px;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-  }
+.features-list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 @media screen and (min-width: 768px) {
   .features-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -467,7 +463,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 8px;
+    gap: 30px;
   }
 }
 
@@ -509,72 +505,29 @@ a:hover {
   background-image: url(./../images/astronaut.png);
 }
 
+.services {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+  }
+}
 .services__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .services__title {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .services__title {
-    display: block;
-  }
 }
 .services__list {
   gap: 30px;
-  list-style: none;
   margin-top: 50px;
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .services__list {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .services__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 .services__image {
   width: 100%;
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .services__image {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .services__image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 .services__item {
   position: relative;
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .services__item {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .services__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 .services__text {
   font-family: "Roboto", sans-serif;
@@ -584,26 +537,15 @@ a:hover {
   padding: 27px;
   color: rgb(255, 255, 255);
   position: absolute;
-  width: 100%;
   bottom: 3px;
+  width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .services__text {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .services__text {
-    display: block;
-  }
 }
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 @media screen and (min-width: 768px) {
   .team {
@@ -640,31 +582,21 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 140px;
-}
-@media screen and (min-width: 768px) {
-  .team-icone {
-    padding-left: 90px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team-icone {
-    padding-left: 50px;
-  }
-}
-
-.item-icone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-icone {
+    padding-left: 0px;
+  }
 }
 
 .team-item {
   background-color: #fff;
   text-align: center;
+  width: 100%;
   padding-bottom: 30px;
   margin-bottom: 94px;
 }
@@ -720,12 +652,13 @@ a:hover {
   margin-bottom: 16px;
 }
 .team-link {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 12px;
-  padding-left: 10px;
   border-radius: 50%;
   color: rgb(175, 177, 184);
   -webkit-transition: background-color 0.3s, border 0.3s, fill 0.3s;
@@ -735,7 +668,6 @@ a:hover {
 .team-link:hover,
 .team-link:focus {
   background-color: rgb(33, 150, 243);
-  border: 1px solid rgb(33, 150, 243);
   color: #fff;
 }
 
@@ -873,16 +805,9 @@ a:hover {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 100%;
-  font-size: 28px;
-  font-weight: bold;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-align: center;
-}
-
-.footer-logo span {
-  color: #2196f3;
 }
 
 .footer-address {
@@ -894,6 +819,7 @@ a:hover {
     padding-left: 10px;
   }
 }
+
 .footer-info {
   padding-top: 20px;
 }
@@ -950,7 +876,6 @@ a:hover {
 .footer-link:hover,
 .footer-link:focus {
   background-color: rgb(33, 150, 243);
-  border: 1px solid rgb(33, 150, 243);
 }
 
 .footer-link:hover .footer-svg,
@@ -1076,10 +1001,6 @@ a:hover {
     margin-right: 0px;
     margin-left: 0px;
   }
-}
-
-.portfolio {
-  margin-bottom: 94px;
 }
 
 .filter-list {
@@ -1229,13 +1150,14 @@ a:hover {
 }
 
 .modal {
-  width: 528px;
-  height: 635px;
+  padding: 24px 40px 40px;
+  width: 488px;
+  height: auto;
   background-color: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1256,23 +1178,37 @@ a:hover {
   font-weight: 400;
   font-size: 12px;
   color: rgb(117, 117, 117);
+  display: block;
+  width: 100%;
+  position: relative;
 }
 
 .modal-label-text {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   text-align: start;
   margin-left: 40px;
 }
 
 .modal-input {
-  width: 448px;
   height: 40px;
-  margin: 10px 40px;
+  padding-left: 36px;
+}
+
+.modal-input,
+.modal-input-text {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-text {
-  width: 448px;
+  display: block;
   height: 120px;
+  padding: 12px 16px;
+  resize: none;
 }
 
 .modal-input::-webkit-input-placeholder {
@@ -1346,7 +1282,6 @@ a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  text-align: center;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -1358,28 +1293,26 @@ a:hover {
   margin-top: 20px;
 }
 
-.modal-svg-people {
+.modal-svg {
   width: 12px;
   height: 12px;
-  position: relative;
-  bottom: 40px;
-  right: 200px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
 }
 
-.modal-svg-phone {
-  width: 12px;
-  height: 12px;
-  position: relative;
-  bottom: 40px;
-  right: 200px;
-}
-
-.modal-svg-email {
-  width: 12px;
-  height: 12px;
-  position: relative;
-  bottom: 40px;
-  right: 200px;
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .close-button {
@@ -1388,9 +1321,9 @@ a:hover {
   border-radius: 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  position: relative;
+  position: absolute;
   top: 10px;
-  left: 240px;
+  right: 12px;
 }
 
 .backdrop.is-hidden {
