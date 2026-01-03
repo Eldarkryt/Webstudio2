@@ -56,19 +56,16 @@ a {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    border: 1px solid blue;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    border: 1px solid red;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    border: 1px solid green;
   }
 }
 
@@ -95,6 +92,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;
+  margin-top: 32px;
 }
 
 .nav-list {
@@ -785,6 +783,14 @@ a {
   padding: 40px 0;
 }
 
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .footer-list {
     display: -webkit-box;
@@ -981,8 +987,8 @@ a {
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding-left: 31px;
-  padding-right: 64px;
+  padding-left: 45px;
+  padding-right: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
@@ -991,8 +997,12 @@ a {
 }
 @media screen and (min-width: 768px) {
   .mailing-btn {
-    margin-right: 160px;
-    margin-left: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1001,48 +1011,6 @@ a {
     margin-right: 0px;
     margin-left: 0px;
   }
-}
-
-.filter-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 60px;
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 768px) {
-  .filter-list {
-    gap: 8px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .filter-list {
-    margin-top: 94px;
-    margin-bottom: 34px;
-  }
-}
-
-.filter-link {
-  padding: 10px 20px;
-  background-color: #f5f4fa;
-  color: rgb(33, 33, 33);
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.filter-link:hover {
-  background-color: #2196f3;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  color: #ffffff;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275), 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725), 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
-          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1215686275), 0px 1px 2px 0px rgba(0, 0, 0, 0.0784313725), 0px 3px 1px 0px rgba(0, 0, 0, 0.1019607843);
 }
 
 .projects-list {

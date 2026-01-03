@@ -70,6 +70,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px;
+  margin-top: 32px;
 }
 
 .nav-list {
@@ -372,19 +373,16 @@ a {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    border: 1px solid blue;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    border: 1px solid red;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    border: 1px solid green;
   }
 }
 
@@ -528,6 +526,14 @@ a {
   padding: 40px 0;
 }
 
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media screen and (min-width: 768px) {
   .footer-list {
     display: -webkit-box;
@@ -724,8 +730,8 @@ a {
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding-left: 31px;
-  padding-right: 64px;
+  padding-left: 45px;
+  padding-right: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
@@ -734,8 +740,12 @@ a {
 }
 @media screen and (min-width: 768px) {
   .mailing-btn {
-    margin-right: 160px;
-    margin-left: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {

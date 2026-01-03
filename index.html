@@ -179,7 +179,7 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                srcset="./images/igorX1.jpg  1x, ./images/igorX2.jpg 2x"
+                srcset="./images/igorX1.jpg 1x, ./images/igorX2.jpg 2x"
                 class="team-photo"
                 src="./images/igorX1.jpg"
                 alt=""
@@ -404,122 +404,124 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-list">
-          <div class="footer-address">
-            <a class="footer-logo logo" href=""><span>Web</span>studio</a>
-            <address class="footer-info">
-              <ul class="address-list">
-                <li class="address-item">
-                  <a class="address-link" href=""
-                    >Київ, пр-т Лесі Українки, 26</a
-                  >
+    <div class="all-footer">
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-list">
+            <div class="footer-address">
+              <a class="footer-logo logo" href=""><span>Web</span>studio</a>
+              <address class="footer-info">
+                <ul class="address-list">
+                  <li class="address-item">
+                    <a class="address-link" href=""
+                      >Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link" href="">info@devstudio.com</a>
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link" href="">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-icone-div">
+              <h2 class="footer-icone-title">приєднуйтесь</h2>
+              <ul class="footer-icone">
+                <li class="icone-item">
+                  <a href="" class="footer-link">
+                    <svg class="footer-svg">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address-item">
-                  <a class="address-link" href="">info@devstudio.com</a>
+                <li class="icone-item">
+                  <a href="" class="footer-link">
+                    <svg class="footer-svg">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address-item">
-                  <a class="address-link" href="">+38 096 111 11 11</a>
+                <li class="icone-item">
+                  <a href="" class="footer-link">
+                    <svg class="footer-svg">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icone-item">
+                  <a href="" class="footer-link">
+                    <svg class="footer-svg">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="footer-icone-div">
-            <h2 class="footer-icone-title">приєднуйтесь</h2>
-            <ul class="footer-icone">
-              <li class="icone-item">
-                <a href="" class="footer-link">
-                  <svg class="footer-svg">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icone-item">
-                <a href="" class="footer-link">
-                  <svg class="footer-svg">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icone-item">
-                <a href="" class="footer-link">
-                  <svg class="footer-svg">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icone-item">
-                <a href="" class="footer-link">
-                  <svg class="footer-svg">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="mailing">
-            <h2 class="mailing-title">Підпишіться на розсилку</h2>
-            <input type="email" placeholder="E-mail" class="mailing-input" />
-            <button type="submit" class="mailing-btn">Підписатися</button>
+            </div>
+            <div class="mailing">
+              <h2 class="mailing-title">Підпишіться на розсилку</h2>
+              <input type="email" placeholder="E-mail" class="mailing-input" />
+              <button type="submit" class="mailing-btn">Підписатися</button>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" data-modal-close class="close-button">
-          <svg class="close-button-svg">
-            <use href="./images/symbol-defs.svg#icon-krestic"></use>
-          </svg>
-        </button>
-        <h2 class="modal-title">
-          Залиште свої дані, ми вам<br />
-          передзвонимо
-        </h2>
-
-        <form class="modal-form">
-          <label class="modal-ladel"
-            >ім'я
-            <input type="text" class="modal-input" />
-            <svg class="modal-svg">
-              <use href="./images/symbol-defs.svg#icon-people"></use>
+      </footer>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" data-modal-close class="close-button">
+            <svg class="close-button-svg">
+              <use href="./images/symbol-defs.svg#icon-krestic"></use>
             </svg>
-          </label>
+          </button>
+          <h2 class="modal-title">
+            Залиште свої дані, ми вам<br />
+            передзвонимо
+          </h2>
 
-          <label class="modal-ladel"
-            >телефон
-            <input type="tel" class="modal-input" />
-            <svg class="modal-svg">
-              <use href="./images/symbol-defs.svg#icon-telephone"></use>
-            </svg>
-          </label>
+          <form class="modal-form">
+            <label class="modal-ladel"
+              >ім'я
+              <input type="text" class="modal-input" />
+              <svg class="modal-svg">
+                <use href="./images/symbol-defs.svg#icon-people"></use>
+              </svg>
+            </label>
 
-          <label class="modal-ladel"
-            >пошта
-            <input type="email" class="modal-input" />
-            <svg class="modal-svg">
-              <use href="./images/symbol-defs.svg#icon-poshta"></use>
-            </svg>
-          </label>
+            <label class="modal-ladel"
+              >телефон
+              <input type="tel" class="modal-input" />
+              <svg class="modal-svg">
+                <use href="./images/symbol-defs.svg#icon-telephone"></use>
+              </svg>
+            </label>
 
-          <label class="modal-ladel"
-            >коментар
-            <!-- <input
+            <label class="modal-ladel"
+              >пошта
+              <input type="email" class="modal-input" />
+              <svg class="modal-svg">
+                <use href="./images/symbol-defs.svg#icon-poshta"></use>
+              </svg>
+            </label>
+
+            <label class="modal-ladel"
+              >коментар
+              <!-- <input
                     type="text"
                     placeholder="Введіть text"
                     class="modal-input-text"
                   /> -->
-            <textarea class="modal-input-text"></textarea>
-          </label>
+              <textarea class="modal-input-text"></textarea>
+            </label>
 
-          <label class="modal-label-checkbox">
-            <input type="checkbox" class="input-checkbox" />
-            Погоджуюся з розсилкою та приймаю
-            <span><a href="" class="modal-link">Умови договору</a></span>
-          </label>
-          <button type="submit" class="btn-modal">Відправити</button>
-        </form>
+            <label class="modal-label-checkbox">
+              <input type="checkbox" class="input-checkbox" />
+              Погоджуюся з розсилкою та приймаю
+              <span><a href="" class="modal-link">Умови договору</a></span>
+            </label>
+            <button type="submit" class="btn-modal">Відправити</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./modal.js"></script>

@@ -4,6 +4,8 @@
   padding: 40px 0;
 }
 .footer-list {
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +28,6 @@
   @media screen and (min-width: 768px) {
     padding-left: 10px;
   }
-
 }
 .footer-info {
   padding-top: 20px;
@@ -54,7 +55,7 @@
   text-transform: uppercase;
   margin-top: 20px;
   text-align: center;
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     text-align: center;
   }
 }
@@ -92,9 +93,8 @@
 .mailing {
   margin-top: 60px;
   @media screen and (min-width: 1200px) {
-   margin-top: 15px;
+    margin-top: 15px;
   }
-
 }
 .mailing-title {
   font-family: "Roboto", sans-serif;
@@ -138,16 +138,16 @@
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding-left: 31px;
-  padding-right: 64px;
+  padding-left: 45px;
+  padding-right: 45px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: 10px;
   margin-right: 140px;
   margin-left: 140px;
   @media screen and (min-width: 768px) {
-   margin-right: 160px;
-  margin-left: 160px;
+    display: flex;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 0px;
@@ -155,3 +155,7 @@
     margin-left: 0px;
   }
 }
+// .all-footer{
+// display: flex;
+// flex-direction: column;
+// }
