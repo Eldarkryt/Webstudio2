@@ -4,7 +4,6 @@
   padding: 20px 0;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 32px;
 }
 .nav-list {
   @extend %flex;
@@ -209,3 +208,4 @@
   height: 100%;
   background-color: rgba(33, 33, 33, 0.2);
 }
+
